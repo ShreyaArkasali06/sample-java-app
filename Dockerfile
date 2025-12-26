@@ -1,4 +1,4 @@
-FROM eclipse-temurin:8-jdk
+FROM eclipse-temurin:17-jdk
 EXPOSE 8080
-ADD target/my-app.jar my-app.jar
-ENTRYPOINT ["java","-jar","/devops-integration.jar"]
+ADD target/*.jar app.jar
+ENTRYPOINT ["java","-jar","app.jar"]
