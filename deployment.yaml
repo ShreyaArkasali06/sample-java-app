@@ -12,7 +12,7 @@ spec:
     name: pod1
     labels: 
      name: deploy
-  spec:
+   spec:
    containers: 
     - name: mycont
       image: shreya0666/proj1:latest
