@@ -13,7 +13,7 @@ spec:
     labels: 
      name: deploy
   spec:
-   container: 
+   containers: 
     - name: mycont
       image: shreya0666/proj1:latest
       ports:
