@@ -7,7 +7,7 @@ spec:
  selector: 
   matchLabels:
    name: deploy
-  template:
+ template:
    metadata:
     name: pod1
     labels: 
