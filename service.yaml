@@ -6,6 +6,6 @@ spec:
  type: NodePort
  selector:
   name: deploy
-ports:
+ ports:
  - port: 80
    targetPort: 8080
