@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+ name: deploy
+spec:
+ replicas: 1
+ selector: 
+  matchLabels:
+   name: deploy
+  template:
+   metadata:
+    name: pod1
+    labels: 
+     name: deploy
+  spec:
+   container: 
+    - name: mycont
+      image: shreya0666/proj1:latest
+      ports:
+       - containerPort: 8080
+    
